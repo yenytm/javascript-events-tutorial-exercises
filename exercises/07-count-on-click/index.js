@@ -15,3 +15,13 @@ window.increaseCounter = function increaseCounter()
 	//update the screen with the new value
 	document.getElementById('screen').innerHTML = "The counter value is "+counter;
 }
+
+function decreaseCounter(){
+	let elem = document.getElementById("screen");
+	let value = elem.innerHTML;
+	--value
+
+	console.log(value)
+	document.getElementById("screen").innerHTML = value
+}
+
